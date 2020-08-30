@@ -1,0 +1,6 @@
+#学号:G20200343110229
+#姓名:西门搬砖
+#班级:14期1班
+#语言:Go
+#作业&总结链接: https://github.com/SimonAlgo14/algorithm014-algorithm014/tree/master/Week_02
+
