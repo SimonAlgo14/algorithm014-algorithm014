@@ -4,9 +4,17 @@ import "fmt"
 
 func main() {
 	arr := []int{0, 0, 0, 1, 0, 1, 0, 3, 12}
+
+	fmt.Println(arr)
+	moveZero(arr)
 	fmt.Println(arr)
 
-	moveZero(arr)
+	fmt.Println()
+
+	arr = []int{0, 0, 0, 1, 0, 1, 0, 3, 12}
+
+	fmt.Println(arr)
+	moveZero2(arr)
 	fmt.Println(arr)
 }
 
@@ -27,5 +35,14 @@ func moveZero(a []int) {
 		}
 
 		j++
+	}
+}
+
+func moveZero2(a [] int) {
+	for i, j := 0, 0; i < len(a); i++ {
+		if a[i] != 0 {
+			a[i], a[j] = a[j], a[i]
+			j++
+		}
 	}
 }

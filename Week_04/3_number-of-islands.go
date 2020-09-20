@@ -17,14 +17,14 @@ func numIslands(grid [][]byte) int {
 }
 
 func mask(grid [][]byte, row int, col int) {
-	rows := len(grid)
-	cols := len(grid[0])
+	maxRow := len(grid)
+	maxCol := len(grid[0])
 
-	if row >= rows || col >= cols {
+	if row >= maxRow || col >= maxCol {
 		return
 	}
 
-	if col + 1 < cols && grid[row][col+1] == '1' {
+	if col + 1 < maxCol && grid[row][col+1] == '1' {
 		grid[row][col+1] = '0'
 		mask(grid, row, col + 1)
 	}
@@ -34,7 +34,7 @@ func mask(grid [][]byte, row int, col int) {
 		mask(grid, row, col - 1)
 	}
 
-	if row + 1 < rows && grid[row+1][col] == '1' {
+	if row + 1 < maxRow && grid[row+1][col] == '1' {
 		grid[row+1][col] = '0'
 		mask(grid, row+1, col)
 	}
