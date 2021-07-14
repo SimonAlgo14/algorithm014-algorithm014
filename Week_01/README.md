@@ -1,7 +1,3 @@
-学习笔记
-
-  这周 领会了老师的 “ 五毒神掌 ” ； 十个 Leetcode 题目过了二遍； 视频看了二篇， 每看一遍，都有新的收获。
-
 https://leetcode.com/problems/design-circular-queue/submissions/                                2
 https://leetcode.com/problems/climbing-stairs/                                                  2
 https://leetcode.com/problems/merge-k-sorted-lists/submissions/                                 2
